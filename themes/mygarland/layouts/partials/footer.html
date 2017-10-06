@@ -1,0 +1,47 @@
+  <div class="clear-block">
+    <div class="meta">
+    </div>
+    {{ partial "checktranslation.html" . }}
+    </div>
+
+</div>
+          </div>
+                    <div id="footer">' A Premier Ukrainian Law Firm '</div>
+      </div></div></div></div> <!-- /.left-corner, /.right-corner, /#squeeze, /#center -->
+
+              <div id="sidebar-right" class="sidebar">
+                    <div id="block-locale-0" class="clear-block block block-locale">
+
+
+<!--  <div class="content"><ul><li class="en first active"><a href="/en" class="language-link active"><img src="/img/flags/en.png" alt="English" title="English"  class="language-icon" width="16" height="12" /> English</a></li>
+<li class="ru"><a href="/ru" class="language-link"><img src="/img/flags/ru.png" alt="Русский" title="Русский"  class="language-icon" width="16" height="12" /> Русский</a></li>
+<li class="uk last"><a href="/uk" class="language-link"><img src="/img/flags/uk.png" alt="Українська" title="Українська"  class="language-icon" width="16" height="12" /> Українська</a></li>
+</ul></div> -->
+
+  <div class="content">{{- if .IsTranslated -}}<ul>
+    {{ range .Translations }}
+    <li><a href="{{ .Permalink }}" title="{{ .Title }}" class="translation-link"><img src="/img/{{ .Lang }}.png" width="16" height="12" class="language-icon" width="16" height="12" /> {{ .Language.LanguageName }}</a></li>
+    {{ end}}
+</ul>{{- else -}}
+<ul>
+    <li><a href="/uk/home/" title="Головна сторінка" class="translation-link"><img src="/img/uk.png" width="16" height="12" class="language-icon" width="16" height="12" /> Головна сторінка</a></li>
+    <li><a href="/ru/home/" title="Главная страница" class="translation-link"><img src="/img/ru.png" width="16" height="12" class="language-icon" width="16" height="12" /> Главная страница</a></li>
+    <li><a href="/en/home/" title="Home" class="translation-link"><img src="/img/en.png" width="16" height="12" class="language-icon" width="16" height="12" /> Home</a></li>
+</ul>
+{{- end -}}
+</div>
+
+</div>
+<div id="block-menu-primary-links" class="clear-block block block-menu">
+
+
+  <div class="content">{{ partial "asidemenu.html" . }}</div>
+</div>
+        </div>
+      
+    </div> <!-- /container -->
+  </div>
+<!-- /layout -->
+
+    </body>
+</html>

@@ -1,0 +1,27 @@
+title = "A Premier Ukrainian Law Firm"
+baseurl = "/"
+languageCode = "en-us"
+theme = "mygarland"
+disableKinds = ["RSS"]
+
+DefaultContentLanguage = "ru"
+defaultContentLanguageInSubdir = true
+
+uglyURLs = false
+
+[Languages]
+
+[Languages.uk]
+languageName = "Українська"
+title = "Vasko"
+weight = 1
+
+[Languages.ru]
+languageName = "Русский"
+title = "Vasko"
+weight = 2
+
+[Languages.en]
+languageName = "English"
+title = "Vasko"
+weight = 3

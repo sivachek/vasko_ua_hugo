@@ -1,0 +1,7 @@
+{{- if .IsTranslated -}}
+<div class="links"><ul class="links inline">
+    {{- range .Translations -}}
+    <li class="node_translation_{{ .Lang }}"><a href="{{ .Permalink }}" title="{{ .Title }}" class="translation-link"><img src="/img/{{ .Lang }}.png" width="16" height="12" class="language-icon" width="16" height="12" /> {{ .Title }}</a></li>
+    {{- end -}}
+</ul></div>
+{{- end -}}
