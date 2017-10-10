@@ -20,13 +20,13 @@
 
   <div class="content">{{- if .IsTranslated -}}<ul>
     {{ range .Translations }}
-    <li><a href="{{ .Permalink }}" title="{{ .Title }}" class="translation-link"><img src="/img/{{ .Lang }}.png" width="16" height="12" class="language-icon" width="16" height="12" /> {{ .Language.LanguageName }}</a></li>
+    <li><a href="{{ .Permalink }}" title="{{ .Title }}" class="translation-link"><img src="/img/{{ .Lang }}.png" width="16" height="12" class="language-icon" alt="{{ .Language.LanguageName }}" /> {{ .Language.LanguageName }}</a></li>
     {{ end}}
 </ul>{{- else -}}
 <ul>
-    <li><a href="/uk/home/" title="Головна сторінка" class="translation-link"><img src="/img/uk.png" width="16" height="12" class="language-icon" width="16" height="12" /> Головна сторінка</a></li>
-    <li><a href="/ru/home/" title="Главная страница" class="translation-link"><img src="/img/ru.png" width="16" height="12" class="language-icon" width="16" height="12" /> Главная страница</a></li>
-    <li><a href="/en/home/" title="Home" class="translation-link"><img src="/img/en.png" width="16" height="12" class="language-icon" width="16" height="12" /> Home</a></li>
+    <li><a href="/uk/home/" title="Головна сторінка" class="translation-link"><img src="/img/uk.png" width="16" height="12" class="language-icon" alt="Головна сторінка" /> Головна сторінка</a></li>
+    <li><a href="/ru/home/" title="Главная страница" class="translation-link"><img src="/img/ru.png" width="16" height="12" class="language-icon"  alt="Главная страница" /> Главная страница</a></li>
+    <li><a href="/en/home/" title="Home" class="translation-link"><img src="/img/en.png" width="16" height="12" class="language-icon" alt="Home" /> Home</a></li>
 </ul>
 {{- end -}}
 </div>
