@@ -1,0 +1,24 @@
+{{- partial "header.html" . -}}
+<div class="container">
+<h1>{{- .Title -}}</h1>
+</div>
+<!-- Content -->
+<div class="container">
+{{- .Content -}}
+</div>
+<!-- /Content -->
+<div class="container">
+<ul>
+{{- range .Data.Pages.ByWeight -}}
+  <li><h5><a href="{{ .Permalink }}">{{- .Title -}}</a></h5>
+     <div>
+          {{ .Summary }}
+     </div>
+	 <div>
+        <a href="{{ .RelPermalink }}">Read More…</a>
+     </div>
+     </li>
+{{- end -}}
+</ul>
+</div>
+{{- partial "footer.html" . -}}
