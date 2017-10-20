@@ -1,7 +1,7 @@
 title = "A Premier Ukrainian Law Firm"
 baseurl = "/"
 languageCode = "en-us"
-theme = "mygarland"
+theme = "html5"
 disableKinds = ["RSS"]
 
 DefaultContentLanguage = "ru"
