@@ -1,6 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="{{ .Lang }}" dir="ltr">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="shortcut icon" href="/img/garland_favicon.ico" type="image/x-icon" />
@@ -27,7 +27,7 @@
 
       <div id="header">
         <div id="logo-floater">
-        <h1><a href="/en" title="A Premier Ukrainian Law Firm"><img src="/img/garland_logo.png" alt="A Premier Ukrainian Law Firm" id="logo" /><span>A Premier Ukrainian Law Firm</span></a></h1>
+        <h1><a href="/{{ .Lang }}/home/" title="A Premier Ukrainian Law Firm"><img src="/img/garland_logo.png" alt="A Premier Ukrainian Law Firm" id="logo" /><span>A Premier Ukrainian Law Firm</span></a></h1>
         </div>
 
 {{- partial "topmenu.html" . -}}
