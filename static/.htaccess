@@ -8,3 +8,9 @@ ErrorDocument 404 /index.php
 
 # Set the default handler.
 DirectoryIndex index.html
+
+<filesMatch "\.(html|htm|js|css|png|gif|jpg)$">
+  <ifModule mod_headers.c>
+     Header set Cache-Control "public, max-age=604800"
+  </ifModule>
+</filesMatch>
