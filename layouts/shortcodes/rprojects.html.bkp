@@ -1,2 +1,0 @@
-{{- $t := .Page.Lang -}}
-{{- with .Site.GetPage "page" (print "rprojects." $t ".html") }}{{ .Content }}{{ end -}}
