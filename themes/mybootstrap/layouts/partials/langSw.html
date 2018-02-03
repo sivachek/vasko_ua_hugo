@@ -1,0 +1,18 @@
+﻿<div class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+     {{ upper .Lang }}
+  </a>
+  {{- if .IsTranslated -}}
+  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+    {{ range .Translations }}
+      <a href="{{ .Permalink }}" title="{{ .Title }}" class="dropdown-item">{{ upper .Lang }}</a>
+    {{- end -}}
+  </div>
+  {{- else -}}
+  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+    <a href="/uk/home/" title="Головна сторінка" class="dropdown-item">UK</a>
+    <a href="/ru/home/" title="Главная страница" class="dropdown-item">RU</a>
+    <a href="/en/home/" title="Home" class="dropdown-item">EN</a>
+  </div>
+  {{- end -}}
+</div>
