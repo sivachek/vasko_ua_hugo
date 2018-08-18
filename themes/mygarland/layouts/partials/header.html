@@ -5,14 +5,26 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="shortcut icon" href="/img/garland_favicon.ico" type="image/x-icon" />
     <title>{{- .Title }} | Vasko</title>
-    <link type="text/css" rel="stylesheet" media="all" href="/css/aggregator.css" />
+    <!-- <link type="text/css" rel="stylesheet" media="all" href="/css/aggregator.css" />
     <link type="text/css" rel="stylesheet" media="all" href="/css/book.css" />
     <link type="text/css" rel="stylesheet" media="all" href="/css/node.css" />
     <link type="text/css" rel="stylesheet" media="all" href="/css/defaults.css" />
     <link type="text/css" rel="stylesheet" media="all" href="/css/system.min.css" />
     <link type="text/css" rel="stylesheet" media="all" href="/css/system-menus.css" />
-    <link type="text/css" rel="stylesheet" media="all" href="/css/user.css" />
-    <link type="text/css" rel="stylesheet" media="all" href="/css/style.min.css" />
+    <link type="text/css" rel="stylesheet" media="all" href="/css/user.css" /> -->
+{{ $ra := resources.Get "css/aggregator.css" }}
+{{ $rb := resources.Get "css/book.css" }}
+{{ $rc := resources.Get "css/node.css" }}
+{{ $rd := resources.Get "css/defaults.css" }}
+{{ $re := resources.Get "css/system.min.css" }}
+{{ $rf := resources.Get "css/system-menus.css" }}
+{{ $rg := resources.Get "css/user.css" }}
+{{ $rh := resources.Get "css/style.min.css" }}
+
+{{ $mcss := slice $ra $rb $rc $rd $re $rf $rg $rh | resources.Concat "css/bundle.css" | minify | fingerprint }}
+<link type="text/css" rel="stylesheet" media="all" href="{{ $mcss.Permalink }}" />
+
+<!--    <link type="text/css" rel="stylesheet" media="all" href="/css/style.min.css" /> -->
     <link type="text/css" rel="stylesheet" media="print" href="/css/print.min.css" />
         <!--[if lt IE 7]>
       <link type="text/css" rel="stylesheet" media="all" href="/themes/garland/fix-ie.css" />    <![endif]-->
