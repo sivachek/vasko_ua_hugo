@@ -14,8 +14,9 @@
     <link type="text/css" rel="stylesheet" media="all" href="/css/user.css" />
     <link type="text/css" rel="stylesheet" media="all" href="/css/style.min.css" />
     <link type="text/css" rel="stylesheet" media="print" href="/css/print.min.css" />
-        <!--[if lt IE 7]>
-      <link type="text/css" rel="stylesheet" media="all" href="/themes/garland/fix-ie.css" />    <![endif]-->
+    {{safeHTML "<!--[if lt IE 7]>" }}
+      <link type="text/css" rel="stylesheet" media="all" href="/themes/garland/fix-ie.css" />
+    {{safeHTML "<![endif]-->" }}
   </head>
   <body class="sidebar-right">
 
