@@ -2,8 +2,14 @@
 <html>
 <head>
 <title>A Premier Ukrainian Law Firm | Vasko</title>
-<link rel="canonical" href="{{ .Permalink }}" />
-<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<meta http-equiv="refresh" content="0; url={{ .Permalink }}" />
+{{if eq .Permalink "/ru" -}}
+<link rel="canonical" href="/uk/home/">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta http-equiv="refresh" content="0; url=/uk/home/">
+{{else -}}
+<link rel="canonical" href="{{ .Permalink }}">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta http-equiv="refresh" content="0; url={{ .Permalink }}">
+{{end -}}
 </head>
 </html>
