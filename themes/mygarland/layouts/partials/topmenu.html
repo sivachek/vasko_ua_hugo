@@ -1,8 +1,0 @@
-<ul class="links primary-links">
-  {{- $currentPage := . -}}
-  {{- range .Site.Menus.main -}}
-    <li class='{{if or ($currentPage.HasMenuCurrent "main" .) ($currentPage.IsMenuCurrent "main" .) }} active-trail active{{end}}'>
-      <a href="{{.URL}}" title="{{ .Name }}" class='{{if or ($currentPage.HasMenuCurrent "main" .) ($currentPage.IsMenuCurrent "main" .) }} active{{end}}'>{{ .Name }}</a>
-    </li>
-  {{- end -}}
-</ul>
