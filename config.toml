@@ -13,12 +13,12 @@ uglyURLs = false
 
 [Languages.uk]
 languageName = "Українська"
-title = "Vasko"
+title = "Васько"
 weight = 1
 
 [Languages.ru]
 languageName = "Русский"
-title = "Vasko"
+title = "Васько"
 weight = 2
 
 [Languages.en]
