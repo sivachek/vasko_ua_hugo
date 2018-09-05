@@ -1,6 +1,6 @@
-<div class="langsw">
+<div>
 {{- if .IsTranslated -}}
-<ul>
+<ul class="langsw">
     {{ range .Translations }}
     <li><a href="{{ .Permalink }}" title="{{ .Title }}" class="translation-link">{{ .Language.LanguageName }}</a></li>
     {{ end}}
