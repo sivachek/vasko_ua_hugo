@@ -1,0 +1,17 @@
+﻿ul.menu {
+	display: block;
+	text-transform: uppercase;
+	background-color: #000050;
+	color: white;
+	padding: 0.5em;
+}
+ul.menu li { display: inline; }
+ul.menu li a.active { background-color: #000080; }
+ul.menu li a { color: white; padding: 0.5em; }
+ul.menu li + li:before {
+	content: " | ";
+}
+
+ul.langsw { display: block; text-transform: uppercase; }
+ul.langsw li { display: inline; }
+ul.langsw li + li:before { content: " | "; }
