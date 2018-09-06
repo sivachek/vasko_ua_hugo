@@ -3,10 +3,14 @@
     {{- partial "head.html" . -}}
     <body>
         {{ partial "header.html" . -}}
-        <div id="content">
-<h1>{{.Title}}</h1>
-{{.Content}}
-  {{ range .Pages }}
+<div class="container">
+	<div id="title">
+		<h1>{{.Title}}</h1>
+	</div>
+    <div id="content">
+		{{.Content}}
+	</div>
+	{{ range .Pages }}
     <article>
       <h2>{{ .Title }}</h2>
       {{ .Content }}
