@@ -8,12 +8,18 @@
     <style>
     ul.menu {display: block; text-transform: uppercase; background-color: #000050; color: 
 white; padding: 0.5em;}
-    ul.menu li {display: inline; margin-right: 0.5em;}
+    ul.menu li {display: inline;}
     ul.menu li a.active {background-color: #000080;}
     ul.menu li a {color: white; padding: 0.5em;}
+    ul.menu li + li:before {
+    content: " | ";
+}
 
     ul.langsw {display: block; text-transform: uppercase;}
-    ul.langsw li {display: inline; margin-right: 0.5em;}
+    ul.langsw li {display: inline;}
+    ul.langsw li + li:before {
+    content: " | ";
+}
 
     body {background-color: rgb(255,255,230);
 	color: #000050;
@@ -24,5 +30,5 @@ white; padding: 0.5em;}
 
     a {text-decoration: none; color: #000050;}
     </style>
-
+    <link type="text/css" rel="stylesheet" media="all" href="/css/top.css">
   </head>
