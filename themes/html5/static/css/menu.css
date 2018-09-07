@@ -1,5 +1,17 @@
-﻿ul.menu {
-	display: block;
+﻿section#menus {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #000050;
+	padding-left: 3%;
+	padding-right: 3%;
+
+}
+
+ul.menu {
+	display: flex;
+	flex-wrap: wrap;
 	text-transform: uppercase;
 	font-weight: bold;
 	background-color: #000050;
@@ -17,8 +29,8 @@ ul.menu li + li:before {
 	content: " | ";
 }
 */
-ul.menu li + li a {
-    margin-left: 0.5em;
+ul.menu li + li {
+    padding-left: 0.5em;
 }
 
 
@@ -40,4 +52,3 @@ ul.langsw li + li a {
 ul.langsw li a {
     color: white;
 }
-
