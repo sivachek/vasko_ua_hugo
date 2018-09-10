@@ -1,15 +1,13 @@
 <nav>
-{{- if .IsTranslated -}}
 <ul class="langsw">
+{{- if .IsTranslated -}}
     {{ range .Translations }}
     <li><a href="{{ .Permalink }}" title="{{ .Title }}" class="translation-link">{{ .Lang }}</a></li>
     {{ end}}
-</ul>
 {{- else -}}
-<ul class="langsw">
     <li><a href="/uk/home/" title="Головна сторінка">UK</a></li>
     <li><a href="/ru/home/" title="Главная страница">RU</a></li>
     <li><a href="/en/home/" title="Home">EN</a></li>
-</ul>
 {{- end -}}
+</ul>
 </nav>

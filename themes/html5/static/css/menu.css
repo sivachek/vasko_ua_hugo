@@ -1,11 +1,15 @@
-﻿section#menus {
+﻿#menu_container {
+	background-color: #000050;
+}
+section#menus {
 	display: flex;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 	justify-content: space-between;
 	align-items: center;
 	background-color: #000050;
 	padding-left: 3%;
 	padding-right: 3%;
+	max-width: 768px;
 }
 ul.menu {
 	display: flex;
@@ -14,13 +18,19 @@ ul.menu {
 	font-weight: bold;
 	background-color: #000050;
 	color: white;
-	padding: 0.5em;
-	margin: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: -0.5em;
+	padding: 0px;
 }
-ul.menu li { display: inline; }
+ul.menu li {
+	display: inline-block;
+}
 ul.menu li a.active { background-color: #000080; }
 ul.menu li a {
-    color: white;
+	display: inline-block;
+	color: white;
+	padding: 0.5em;
 }
 /*
 ul.menu li + li:before {
@@ -28,7 +38,7 @@ ul.menu li + li:before {
 }
 */
 ul.menu li + li {
-    padding-left: 0.5em;
+/*    padding-left: 0.5em; */
 }
 
 
@@ -38,15 +48,16 @@ ul.langsw {
 	font-weight: bold;
 	background-color: #000050;
 	color: white;
-	padding: 0.5em;
+	padding: 0px;
 	margin: 0px;
 	width: 6em;
 }
 ul.langsw li { display: inline; }
 /* ul.langsw li + li:before { content: " | "; } */
 ul.langsw li + li a {
-	margin-left: 0.5em;
+/*	margin-left: 0.5em; */
 }
 ul.langsw li a {
     color: white;
+	padding: 0.5em;
 }
