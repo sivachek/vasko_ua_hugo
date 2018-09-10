@@ -30,3 +30,14 @@ footer {
     max-width: 100%;
     height: auto;
 }
+
+#content li a {
+	color: darkblue;
+	display: inline-block;
+	padding-top: 0.3em;
+	padding-bottom: 0.2em;
+	font-weight: bold;
+}
+#content li a:hover {
+    text-decoration: underline;
+}

@@ -31,6 +31,7 @@ ul.menu li a {
 	display: inline-block;
 	color: white;
 	padding: 0.5em;
+	padding-bottom: 0.4em;
 }
 /*
 ul.menu li + li:before {
@@ -60,4 +61,5 @@ ul.langsw li + li a {
 ul.langsw li a {
     color: white;
 	padding: 0.5em;
+	padding-bottom: 0.4em;
 }
