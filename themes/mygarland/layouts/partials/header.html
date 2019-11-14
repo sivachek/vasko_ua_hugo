@@ -12,23 +12,21 @@
     <link type="text/css" rel="stylesheet" media="all" href="/css/system.min.css" />
     <link type="text/css" rel="stylesheet" media="all" href="/css/system-menus.css" />
     <link type="text/css" rel="stylesheet" media="all" href="/css/user.css" /> -->
-{{ $ra := resources.Get "css/aggregator.css" }}
-{{ $rb := resources.Get "css/book.css" }}
-{{ $rc := resources.Get "css/node.css" }}
-{{ $rd := resources.Get "css/defaults.css" }}
-{{ $re := resources.Get "css/system.min.css" }}
-{{ $rf := resources.Get "css/system-menus.css" }}
-{{ $rg := resources.Get "css/user.css" }}
-{{ $rh := resources.Get "css/style.min.css" }}
-
-{{ $mcss := slice $ra $rb $rc $rd $re $rf $rg $rh | resources.Concat "css/bundle.css" | minify }}
-<link type="text/css" rel="stylesheet" media="all" href="{{ $mcss.Permalink }}" />
-
+{{- $ra := resources.Get "css/aggregator.css" -}}
+{{- $rb := resources.Get "css/book.css" -}}
+{{- $rc := resources.Get "css/node.css" -}}
+{{- $rd := resources.Get "css/defaults.css" -}}
+{{- $re := resources.Get "css/system.min.css" -}}
+{{- $rf := resources.Get "css/system-menus.css" -}}
+{{- $rg := resources.Get "css/user.css" -}}
+{{- $rh := resources.Get "css/style.min.css" -}}
+{{- $mcss := slice $ra $rb $rc $rd $re $rf $rg $rh | resources.Concat "css/bundle.css" | minify -}}
+    <link type="text/css" rel="stylesheet" media="all" href="{{- $mcss.RelPermalink -}}" />
 <!--    <link type="text/css" rel="stylesheet" media="all" href="/css/style.min.css" /> -->
     <link type="text/css" rel="stylesheet" media="print" href="/css/print.min.css" />
-    {{safeHTML "<!--[if lt IE 7]>" }}
+    {{ safeHTML "<!--[if lt IE 7]>" -}}
       <link type="text/css" rel="stylesheet" media="all" href="/themes/garland/fix-ie.css" /> 
-   {{safeHTML "<![endif]-->" }}
+   {{- safeHTML "<![endif]-->" }}
   </head>
   <body class="sidebar-right">
 
