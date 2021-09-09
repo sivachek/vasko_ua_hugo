@@ -1,5 +1,5 @@
 title = "A Premier Ukrainian Law Firm"
-baseurl = "/"
+baseurl = "https://static.vasko.ua"
 languageCode = "en-us"
 theme = "mygarland"
 disableKinds = ["RSS"]
