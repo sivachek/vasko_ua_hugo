@@ -41,7 +41,7 @@ disable = true
 [privacy.speakerDeck]
 disable = true
 
-[privacy.twitter]
+[privacy.x]
 disable = true
 
 [privacy.vimeo]
