@@ -1,6 +1,6 @@
 title = "A Premier Ukrainian Law Firm"
 baseurl = "https://static.vasko.ua"
-languageCode = "en-us"
+locale = "en-us"
 theme = "mygarland"
 disableKinds = ["RSS"]
 
@@ -9,20 +9,23 @@ defaultContentLanguageInSubdir = true
 
 uglyURLs = false
 
+[security]
+allowContent = ['.*']
+
 [Languages]
 
 [Languages.uk]
-languageName = "Українська"
+label = "Українська"
 title = "Vasko"
 weight = 1
 
 [Languages.ru]
-languageName = "Русский"
+label = "Русский"
 title = "Vasko"
 weight = 2
 
 [Languages.en]
-languageName = "English"
+label = "English"
 title = "Vasko"
 weight = 3
 
